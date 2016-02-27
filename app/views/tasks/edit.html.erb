@@ -1,0 +1,5 @@
+<h2>Edit Task</h2>
+
+<%= form_for @task, method: :patch, url: lecture_task_path(@lecture, @task) do |f| %>
+	<%= render @task, f: f %>
+<% end %>
