@@ -1,0 +1,9 @@
+<h2>Lectures</h2>
+
+<ul>
+	<% @lectures.each do |lecture| %>
+		<li><%= lecture.inspect %></li>
+	<% end %>
+</ul>
+
+<%= link_to "Create Lecture", new_lecture_path %>
